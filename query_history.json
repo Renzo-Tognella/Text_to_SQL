@@ -1,0 +1,172 @@
+[
+  {
+    "nl_query": "Listar todos os professores",
+    "sql_query": "SELECT id, name, dept_name, salary FROM instructor;",
+    "timestamp": "2025-06-14 13:59:23",
+    "execution_time": 0.00616908073425293,
+    "result_count": 12,
+    "success": true,
+    "error_message": null,
+    "favorite": false
+  },
+  {
+    "nl_query": "Qual é as notas dos alunos em 2010",
+    "sql_query": "SELECT s.name, c.title, t.grade FROM student s JOIN takes t ON s.id = t.id JOIN course c ON t.course_id = c.course_id WHERE t.year = 2010;",
+    "timestamp": "2025-06-14 13:58:54",
+    "execution_time": 0.008413076400756836,
+    "result_count": 9,
+    "success": true,
+    "error_message": null,
+    "favorite": false
+  },
+  {
+    "nl_query": "Quantos estudantes há em ciência da computação?",
+    "sql_query": "SELECT COUNT(*) FROM student WHERE dept_name = 'Comp. Sci.';",
+    "timestamp": "2025-06-14 13:58:31",
+    "execution_time": 0.004044055938720703,
+    "result_count": 1,
+    "success": true,
+    "error_message": null,
+    "favorite": false
+  },
+  {
+    "nl_query": "Qual é a média de notas dos cursos de Economia em 2010?",
+    "sql_query": "SELECT AVG(t.grade) FROM takes t JOIN course c ON t.course_id = c.course_id WHERE c.dept_name = 'Finance' AND t.year = 2010;",
+    "timestamp": "2025-06-14 13:58:23",
+    "execution_time": 0.03559303283691406,
+    "result_count": 1,
+    "success": true,
+    "error_message": null,
+    "favorite": false
+  },
+  {
+    "nl_query": "Qual é as notas dos alunos em 2010",
+    "sql_query": "SELECT s.name, c.title, t.grade FROM student s JOIN takes t ON s.id = t.id JOIN course c ON t.course_id = c.course_id WHERE t.year = 2010;",
+    "timestamp": "2025-06-14 13:56:58",
+    "execution_time": 0.028441905975341797,
+    "result_count": 9,
+    "success": true,
+    "error_message": null,
+    "favorite": false
+  },
+  {
+    "nl_query": "Qual é as notas dos alunos",
+    "sql_query": "SELECT s.name, c.title, t.grade FROM student s JOIN takes t ON s.id = t.id JOIN course c ON t.course_id = c.course_id;",
+    "timestamp": "2025-06-14 13:56:26",
+    "execution_time": 0.005388975143432617,
+    "result_count": 22,
+    "success": true,
+    "error_message": null,
+    "favorite": false
+  },
+  {
+    "nl_query": "Qual é as notas dos alunos em 2014?",
+    "sql_query": "SELECT s.name, c.title, t.grade FROM student s JOIN takes t ON s.id = t.id JOIN course c ON t.course_id = c.course_id WHERE t.year = 2014;",
+    "timestamp": "2025-06-14 13:56:21",
+    "execution_time": 0.02108287811279297,
+    "result_count": 0,
+    "success": true,
+    "error_message": null,
+    "favorite": false
+  },
+  {
+    "nl_query": "Qual é as notas dos alunos em 2024?",
+    "sql_query": "SELECT s.name, c.title, t.grade FROM student s JOIN takes t ON s.id = t.id JOIN course c ON t.course_id = c.course_id WHERE t.year = 2024;",
+    "timestamp": "2025-06-14 13:55:15",
+    "execution_time": 0.0030510425567626953,
+    "result_count": 0,
+    "success": true,
+    "error_message": null,
+    "favorite": false
+  },
+  {
+    "nl_query": "Qual é as notas dos alunos do curso de Economia em 2024?",
+    "sql_query": "SELECT s.name, c.title, t.grade FROM student s JOIN takes t ON s.id = t.id JOIN course c ON t.course_id = c.course_id WHERE c.dept_name = 'Finance' AND t.year = 2024;",
+    "timestamp": "2025-06-14 13:54:51",
+    "execution_time": 0.0072209835052490234,
+    "result_count": 0,
+    "success": true,
+    "error_message": null,
+    "favorite": false
+  },
+  {
+    "nl_query": "Qual é a média de notas dos cursos de Economia em 2024?",
+    "sql_query": "SELECT AVG(t.grade) FROM takes t JOIN course c ON t.course_id = c.course_id WHERE c.dept_name = 'Finance' AND t.year = 2024;",
+    "timestamp": "2025-06-14 13:54:18",
+    "execution_time": 0.029106855392456055,
+    "result_count": 1,
+    "success": true,
+    "error_message": null,
+    "favorite": false
+  },
+  {
+    "nl_query": "Qual é a média de notas dos cursos de Economia em 2024?",
+    "sql_query": "SELECT AVG(T1.grade);",
+    "timestamp": "2025-06-14 13:50:57",
+    "execution_time": null,
+    "result_count": null,
+    "success": false,
+    "error_message": "SQL gerado não passou na validação",
+    "favorite": false
+  },
+  {
+    "nl_query": "Listar todos os professores",
+    "sql_query": "SELECT name FROM instructor;",
+    "timestamp": "2025-06-14 13:48:46",
+    "execution_time": 0.004187107086181641,
+    "result_count": 12,
+    "success": true,
+    "error_message": null,
+    "favorite": false
+  },
+  {
+    "nl_query": "Mostrar todos os estudantes",
+    "sql_query": "SELECT id, name, dept_name, tot_cred FROM student;",
+    "timestamp": "2025-06-14 13:48:42",
+    "execution_time": 0.008879899978637695,
+    "result_count": 13,
+    "success": true,
+    "error_message": null,
+    "favorite": false
+  },
+  {
+    "nl_query": "Quem tem o maior salário?",
+    "sql_query": "SELECT name FROM instructor ORDER BY salary DESC LIMIT 1;",
+    "timestamp": "2025-06-14 13:48:39",
+    "execution_time": 0.006041049957275391,
+    "result_count": 1,
+    "success": true,
+    "error_message": null,
+    "favorite": false
+  },
+  {
+    "nl_query": "Qual é a média de notas dos cursos de Economia em 2024?",
+    "sql_query": "SQL não gerado",
+    "timestamp": "2025-06-14 13:48:35",
+    "execution_time": null,
+    "result_count": null,
+    "success": false,
+    "error_message": "SQL gerado não passou na validação",
+    "favorite": false
+  },
+  {
+    "nl_query": "Quem tem o maior salário?",
+    "sql_query": "SELECT name FROM instructor ORDER BY salary DESC LIMIT 1;",
+    "timestamp": "2025-06-14 13:48:13",
+    "execution_time": 0.00881505012512207,
+    "result_count": 1,
+    "success": true,
+    "error_message": null,
+    "favorite": false
+  },
+  {
+    "nl_query": "Qual é a média de notas dos cursos de Economia em 2024?",
+    "sql_query": "SQL não gerado",
+    "timestamp": "2025-06-14 13:48:08",
+    "execution_time": null,
+    "result_count": null,
+    "success": false,
+    "error_message": "SQL gerado não passou na validação",
+    "favorite": false
+  }
+]
